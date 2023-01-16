@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hw_monday_week_first/static/css/main.5546afbf.css",
+    "main.js": "/hw_monday_week_first/static/js/main.e9b84a6f.js",
+    "static/js/787.66cb4309.chunk.js": "/hw_monday_week_first/static/js/787.66cb4309.chunk.js",
+    "static/media/groot.png": "/hw_monday_week_first/static/media/groot.ee68661091d2c6d69877.png",
+    "index.html": "/hw_monday_week_first/index.html",
+    "main.5546afbf.css.map": "/hw_monday_week_first/static/css/main.5546afbf.css.map",
+    "main.e9b84a6f.js.map": "/hw_monday_week_first/static/js/main.e9b84a6f.js.map",
+    "787.66cb4309.chunk.js.map": "/hw_monday_week_first/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5546afbf.css",
+    "static/js/main.e9b84a6f.js"
+  ]
+}
