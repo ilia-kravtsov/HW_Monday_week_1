@@ -6,22 +6,22 @@ import s from './Affairs.module.css'
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
     setFilter: Dispatch<SetStateAction<FilterType>>
-    deleteAffairCallback: (_id: number) => void
+    deleteAffairCallback: (priority: FilterType) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
     const setAll = () => {
-        // need to fix
+        props.deleteAffairCallback('all')
     }
     const setHigh = () => {
-        // need to fix
+        props.deleteAffairCallback('high')
     }
     const setMiddle = () => {
-        // need to fix
+        props.deleteAffairCallback('middle')
     }
     const setLow = () => {
-        // need to fix
+        props.deleteAffairCallback('low')
     }
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')

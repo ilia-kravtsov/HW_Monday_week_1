@@ -60,9 +60,9 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: number) => { // need to fix any
-        let filteredAffairs = affairs.filter(a => a._id !== _id)
-        setAffairs(filteredAffairs)
+    const deleteAffairCallback = (priority: FilterType) => { // need to fix any
+        let deleteAff = affairs.filter( a => a.priority !== priority)
+        setAffairs(deleteAff)
     }
 
     return (
