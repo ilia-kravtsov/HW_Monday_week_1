@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
+import style from '../hw01/HW1.module.css'
 import {resolveAny} from "dns";
 
 /*
@@ -60,15 +61,15 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (priority: FilterType) => { // need to fix any
-        let deleteAff = affairs.filter( a => a.priority !== priority)
+    const deleteAffairCallback = (_id: number) => { // need to fix any
+        let deleteAff = affairs.filter( a => a._id !== _id)
         setAffairs(deleteAff)
     }
 
     return (
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>
-            <div className={s2.hw}>
+            <div className={`${s2.hw} ${style.border_top} ${style.border_bottom}`}>
                 <Affairs
                     data={filteredAffairs}
                     setFilter={setFilter}
