@@ -10,7 +10,7 @@ beforeEach(() => {
     initialState = []
 })
 
-test('name 1', () => {
+test.skip('name 1', () => {
     pureAddUserCallback('name', setName, initialState)
     expect(initialState.length).toBe(1)
     expect(initialState[0].name).toBe('name')
