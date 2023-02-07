@@ -1,35 +1,71 @@
 .button {
+    background-color: #0066CC;
+    border-radius: 3px;
+    border: none;
 }
 
 .disabled {
+    background-color: #004D99;
+    width: 133px;
+    height: 30px;
+    color: #002E5C;
+
+    opacity: 0.5;
 }
 
 .secondary {
+    width: 176px;
+    height: 30px;
+    color: #0066CC;
+    background: white;
+    border: 1px solid #0066CC;
 }
 
 .default {
+    width: 132px;
+    height: 30px;
+    color: white;
 }
 
 .red {
+    width: 129px;
+    height: 30px;
+    background-color: #CC1439;
+    color: #FFFFFF;
 }
 
 .default:hover {
+    width: 167px;
+    height: 30px;
+    background: #0080FF;
 }
 
 .red:hover {
+    width: 167px;
+    height: 30px;
+    background: #FF1A47;
 }
 
 .secondary:hover {
+    width: 167px;
+    height: 30px;
+    background: #E5F0FA;
 }
 
-
 .default:active {
+    width: 149px;
+    height: 30px;
+    background: #0059B3;
 }
 
 .secondary:active {
+    width: 149px;
+    height: 30px;
 }
 
 .red:active {
+    width: 149px;
+    height: 30px;
 }
 
 .button:disabled {

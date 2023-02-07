@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { v1 } from 'uuid'
-import s2 from '../../s1-main/App.module.css'
+import s2 from './Greeting.module.css'
 import GreetingContainer from './GreetingContainer'
 import User from "../hw08/User";
 

@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import s from './Stand.module.css'
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 
 const Stand = () => {
+
     const [stateForAllInputs, setValue] = useState<string>('')
     const [error, setError] = useState<string>('')
-
     const [stateForAllCheckboxes, setChecked] = useState<boolean>(false)
 
     return (
@@ -43,7 +43,7 @@ const Stand = () => {
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-default'}>
+                    <SuperButton id={'hw4-super-button-default'} default={'default'}>
                         default
                     </SuperButton>
                 </div>
@@ -57,7 +57,6 @@ const Stand = () => {
                 <div>
                     <SuperButton
                         id={'hw4-super-button-disabled'}
-                        xType={'red'}
                         disabled
                     >
                         disabled

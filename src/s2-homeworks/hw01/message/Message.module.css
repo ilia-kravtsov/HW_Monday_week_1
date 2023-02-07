@@ -40,7 +40,7 @@
 }
 
 .messageText {
-
+    word-wrap: break-word;
 }
 
 .time {

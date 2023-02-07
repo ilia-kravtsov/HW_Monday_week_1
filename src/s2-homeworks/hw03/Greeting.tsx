@@ -5,7 +5,7 @@ type GreetingPropsType = {
     name: string // need to fix any
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
-    onBlur: any // need to fix any
+    onBlur: () => void // need to fix any
     onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
@@ -42,7 +42,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
-                        className={error ? inputClass : ''}
+                        className={`${error ? inputClass : ''} ${s.input} ${s.focus}`}
                         onKeyDown={onEnter}
                         onBlur={onBlur}
                     />
@@ -54,10 +54,10 @@ const Greeting: React.FC<GreetingPropsType> = (
                 <button
                     id={'hw3-button'}
                     onClick={addUser}
-                    className={s.button}
+                    className={`${s.button} ${!name.trim() ? s.disabled : false}`}
                     disabled={!name.trim()}
                 >
-                    add
+                    Add
                 </button>
             </div>
 
@@ -66,6 +66,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     Привет <span id={'hw3-last-user'}>{lastUserName}</span>!
                 </div>
             )}
+            <div className={s.border}></div>
         </div>
     )
 }

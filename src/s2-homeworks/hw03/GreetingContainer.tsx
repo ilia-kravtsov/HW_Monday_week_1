@@ -1,6 +1,7 @@
-import React, { ChangeEvent, KeyboardEvent, useState, MouseEvent} from 'react'
+import React, {ChangeEvent, KeyboardEvent, useState, MouseEvent} from 'react'
 import Greeting from './Greeting'
-import { UserType } from './HW3'
+import {UserType} from './HW3'
+import s from './Greeting.module.css'
 
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
@@ -56,7 +57,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const totalUsers = users.length // need to fix
-    const lastUserName = users.map(u => u.name).join(' ') // need to fix
+//  const usersNamesArray = users.map(u => u.name)
+//  const lastUserName = (usersNamesArray[usersNamesArray.length-1]) // need to fix
+    const lastUserName = totalUsers ? users[users.length - 1].name : ''
 
     return (
         <Greeting

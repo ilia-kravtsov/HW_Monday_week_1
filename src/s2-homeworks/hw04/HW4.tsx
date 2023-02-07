@@ -1,6 +1,7 @@
 import React from 'react'
 import s2 from '../../s1-main/App.module.css'
 import Stand from './Stand'
+import s from "../hw03/Greeting.module.css";
 
 /*
 * 1 - понять (и простить) SuperInputText
@@ -17,6 +18,7 @@ const HW4 = () => {
             <div className={s2.hw}>
                 <Stand />
             </div>
+            <div className={s.border}></div>
         </div>
     )
 }
