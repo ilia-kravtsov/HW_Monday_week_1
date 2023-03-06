@@ -20,14 +20,14 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     }
 ) => {
 
-    const finalClassName = s.button + ' ' + (restProps.default ? s.default : '') + ' ' + ( xType === 'red' ? s.red : xType === 'secondary' ? s.secondary : '') + ' ' + (className ? ' ' + className : '') + ' ' + (disabled ? s.disabled : '') // задачка на смешивание классов
+    const finalClassName = s.button + ' ' + (restProps.default ? s.default : '') + ' ' + ( xType === 'red' ? s.red : xType === 'secondary' ? s.secondary : '') + ' ' + (className ? ' ' + className : '') + ' ' + (disabled ? s.disabled : '') + ' ' + (restProps.id === 'hw6-save' ? s.default : '') // задачка на смешивание классов
 
     return (
         <button
             disabled={disabled}
             className={finalClassName}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
-        ><span className={s.hoverSpan}></span><span className={s.activeSpan}></span></button>
+        ><span className={s.hoverSpan}>{restProps.children}</span><span className={s.activeSpan}></span></button>
     )
 }
 
