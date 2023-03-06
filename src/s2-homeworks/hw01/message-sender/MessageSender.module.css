@@ -15,14 +15,12 @@
     margin-left: 70px;
     margin-bottom: 32px;
     outline:none;
-    /*overflow: none;*/
+    overflow: hidden;
     resize: none;
 }
 
 .textarea:hover {
     border: 1px solid lightblue;
-    outline:none;
-
 }
 
 .button {
@@ -34,13 +32,14 @@
     color: white;
     margin-right: 70px;
     margin-bottom: 32px;
+    height: 40px;
 }
 
 .button:hover {
     color: whitesmoke;
-    border: 5px solid #0066CC;
     cursor: pointer;
 }
 .button:active {
-
+    background-color: whitesmoke;
+    color: #0066cc;
 }

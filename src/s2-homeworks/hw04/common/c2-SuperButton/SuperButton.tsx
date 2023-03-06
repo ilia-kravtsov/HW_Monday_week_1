@@ -27,7 +27,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
             disabled={disabled}
             className={finalClassName}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
-        />
+        ><span className={s.hoverSpan}></span><span className={s.activeSpan}></span></button>
     )
 }
 

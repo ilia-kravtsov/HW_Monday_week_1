@@ -1,8 +1,7 @@
 .App {
     --header_height: 60px;
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
-    margin-top: 168px;
 }
 
 .hw {
@@ -16,4 +15,9 @@
 .border {
     border-bottom: 1px solid lightgray;
     height: 216px;
+}
+
+.messagesBlock {
+    display: flex;
+    flex-direction: column;
 }

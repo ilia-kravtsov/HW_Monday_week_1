@@ -76,6 +76,13 @@
 .border {
     border-bottom: 1px solid lightgray;
     height: 216px;
+    margin-bottom: 72px;
+}
+
+.border4 {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 90px;
+    margin-bottom: 72px;
 }
 
 .hwTitle {

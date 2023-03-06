@@ -3,9 +3,13 @@
 
 .input {
     outline: none;
+    width: 372px;
+    height: 36px;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
