@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/hw_monday_week_first/static/css/main.c00e2bee.css",
-    "main.js": "/hw_monday_week_first/static/js/main.9a4c215c.js",
-    "static/js/787.66cb4309.chunk.js": "/hw_monday_week_first/static/js/787.66cb4309.chunk.js",
-    "static/media/groot.png": "/hw_monday_week_first/static/media/groot.ee68661091d2c6d69877.png",
-    "static/media/404.svg": "/hw_monday_week_first/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
-    "static/media/closeOutline.svg": "/hw_monday_week_first/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
-    "static/media/editIcon.svg": "/hw_monday_week_first/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
-    "static/media/checked.svg": "/hw_monday_week_first/static/media/checked.b75ca55e8759862b4083.svg",
-    "index.html": "/hw_monday_week_first/index.html",
-    "static/media/burger.svg": "/hw_monday_week_first/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.c00e2bee.css.map": "/hw_monday_week_first/static/css/main.c00e2bee.css.map",
-    "main.9a4c215c.js.map": "/hw_monday_week_first/static/js/main.9a4c215c.js.map",
-    "787.66cb4309.chunk.js.map": "/hw_monday_week_first/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/homeworks/static/css/main.1702b5b4.css",
+    "main.js": "/homeworks/static/js/main.f7f550e3.js",
+    "static/js/787.66cb4309.chunk.js": "/homeworks/static/js/787.66cb4309.chunk.js",
+    "static/media/groot.png": "/homeworks/static/media/groot.ee68661091d2c6d69877.png",
+    "static/media/404.svg": "/homeworks/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
+    "static/media/closeOutline.svg": "/homeworks/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/editIcon.svg": "/homeworks/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
+    "static/media/checked.svg": "/homeworks/static/media/checked.b75ca55e8759862b4083.svg",
+    "index.html": "/homeworks/index.html",
+    "static/media/burger.svg": "/homeworks/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
+    "main.1702b5b4.css.map": "/homeworks/static/css/main.1702b5b4.css.map",
+    "main.f7f550e3.js.map": "/homeworks/static/js/main.f7f550e3.js.map",
+    "787.66cb4309.chunk.js.map": "/homeworks/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c00e2bee.css",
-    "static/js/main.9a4c215c.js"
+    "static/css/main.1702b5b4.css",
+    "static/js/main.f7f550e3.js"
   ]
 }
