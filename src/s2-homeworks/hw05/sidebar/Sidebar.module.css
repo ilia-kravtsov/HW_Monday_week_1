@@ -1,8 +1,7 @@
 .sidebar {
-    width: 317px;
-    height: 1500px;
+    width: 20%;
+    height: 100%;
     display: none;
-
 }
 
 .sidebar.open {
