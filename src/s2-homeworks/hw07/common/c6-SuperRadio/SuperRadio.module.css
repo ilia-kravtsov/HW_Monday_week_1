@@ -4,12 +4,16 @@
 .radio::before {
 }
 
-
 .radio:checked::before {
+
 }
 
 .label {
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 127px;
+    margin-top: 34px;
 }
