@@ -1,13 +1,34 @@
 .select {
     margin-top: 34px;
     width: 165px;
-    height: 24px;
-    padding-left: 10px;
+    height: 34px;
+    padding: 5px 0 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+.select:hover {
+    cursor: pointer;
 }
 
 .select:focus {
+    cursor: pointer;
+}
 
+.option:checked {
+    background-color: #0066CC;
+    color: #fff;
 }
 
 .option:hover {
+    color:  #0066CC;
+    cursor: pointer;
+}
+
+option {
+    cursor: pointer;
 }

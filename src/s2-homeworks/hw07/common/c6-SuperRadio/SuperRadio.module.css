@@ -1,14 +1,18 @@
 .radio {
+    accent-color: black;
+    cursor: pointer;
 }
 
 .radio::before {
+    cursor: pointer;
 }
 
 .radio:checked::before {
-
+    cursor: pointer;
 }
 
 .label {
+
 }
 
 .options {
@@ -16,4 +20,10 @@
     flex-direction: column;
     margin-left: 127px;
     margin-top: 34px;
+    cursor: pointer;
+}
+
+.span {
+    margin-left: 13px;
+    cursor: pointer;
 }
