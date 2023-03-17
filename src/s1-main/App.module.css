@@ -9,7 +9,7 @@
 }
 
 .hwTitle {
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .border {
@@ -20,4 +20,8 @@
 .messagesBlock {
     display: flex;
     flex-direction: column;
+}
+
+.border_hw_8 {
+    height: 216px;
 }

@@ -1,23 +1,38 @@
 .item {
+    border-bottom: 1px solid lightgrey;
+    width: 303px;
 }
 
 .item:last-of-type {
 }
 
 .users {
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+    width: 606px;
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    margin: 33px 0 18px 307px;
 }
 
 .container {
+    border-top: 1px solid lightgrey;
+    margin-top: 9px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 300px;
 }
 
 .thead {
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    border-bottom: 1px solid lightgrey;
+    width: 303px;
 }
 
 .ageCol {
+    width: 303px;
 }
