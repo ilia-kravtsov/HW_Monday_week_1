@@ -1,9 +1,8 @@
 import React from 'react'
-import Message, {MessagePropsType} from './message/Message'
+import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
-import groot from './groot.png'
 import style from './HW1.module.css'
 
 /*
@@ -31,22 +30,23 @@ export type MessageType = {
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: groot, // можно менять
-        name: 'Groot',  // можно менять
+        avatar: 'https://kartinkin.net/uploads/posts/2021-03/1616119039_2-p-bred-pitt-krasivie-foto-2.jpg', // можно менять
+        name: 'Brad',  // можно менять
     },
     message: {
-        text: 'i am groot', // можно менять
+        text: 'will you marry me?', // можно менять
         time: '22:00', // можно менять
     },
 }
+
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: groot, // можно менять
-        name: 'Groot', // можно менять
+        avatar: "https://remarka.city/gallery/sun9-23.userapi.com/s/v1/if2/4AHw0fp3vUkkYWQTn2nKrIT0crPcM4kaIH7QDXm3tY14nIo5WqwUvfE-9BwUjUAZzxovycNW6Rn5J1bgguUEOul6.jpg?size=200x200&quality=96&crop=280,0,1106,1106&ava=1", // можно менять
+        name: 'Joly', // можно менять
     },
     message: {
-        text: 'i am groot', // можно менять
+        text: 'maybe', // можно менять
         time: '22:05', // можно менять
     },
 }

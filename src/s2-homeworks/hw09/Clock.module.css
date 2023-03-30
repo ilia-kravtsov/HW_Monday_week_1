@@ -1,10 +1,13 @@
 .buttonsContainer {
+    margin-top: 60px;
 }
 
 .clock {
+    margin-bottom: 200px;
 }
 
 .watch {
+    margin-top: 26px;
 }
 
 .watch strong {
