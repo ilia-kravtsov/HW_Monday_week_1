@@ -1,15 +1,15 @@
 .container {
     display: flex;
-    border-bottom: 1px solid lightgray;
     padding-bottom: 201px;
 }
 
 .hwTitle {
     margin-top: 39px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgrey;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 40px 0 10px 70px;
 }
 

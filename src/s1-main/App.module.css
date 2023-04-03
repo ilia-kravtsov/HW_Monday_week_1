@@ -4,14 +4,17 @@
     margin: 0 auto;
 }
 
-.hw {
-}
-
 .hwTitle {
-    margin-top: 35px;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 40px 0 10px 70px;
+}
+
+.hw {
+    margin: 70px;
 }
 
 .border {
@@ -24,15 +27,3 @@
     flex-direction: column;
 }
 
-.border_hw_8 {
-    height: 216px;
-}
-
-.border_hw_9 {
-    border-bottom: 1px solid lightgray;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    margin-top: 36px;
-    margin-bottom: 9px;
-}

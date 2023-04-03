@@ -18,17 +18,12 @@ function Clock() {
     }
 
     const stop = () => {
-        // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         setShow(false)
-        setTimeout(() => {clearInterval(timerId)}, 0);
+        clearInterval(timerId)
     }
 
-    const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
-        setShow(true)
-    }
-    const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
-        setShow(false)
-    }
+    const onMouseEnter = () => setShow(true)
+    const onMouseLeave = () => setShow(false)
 
     let timeFormat = new Intl.DateTimeFormat("ru", {
         hour: "numeric",
@@ -37,7 +32,7 @@ function Clock() {
     });
     let dayFormat = new Intl.DateTimeFormat("en", {weekday: "long"});
     let dateFormat = new Intl.DateTimeFormat("ru");
-    let monthFormat = new Intl.DateTimeFormat("en", {month: "long",});
+    let monthFormat = new Intl.DateTimeFormat("en", {month: "long"});
 
     const stringTime = `${timeFormat.format(date)}` || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
     const stringDate = `${dateFormat.format(date)}` || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем

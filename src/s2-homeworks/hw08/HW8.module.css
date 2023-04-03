@@ -18,9 +18,7 @@
 }
 
 .container {
-    border-top: 1px solid lightgrey;
     margin-top: 9px;
-    border-bottom: 1px solid lightgrey;
 }
 
 .thead {
