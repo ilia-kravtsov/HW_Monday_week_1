@@ -2,6 +2,10 @@
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .imageContainer {
@@ -11,12 +15,20 @@
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
 }
 
 .code {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
 }
 
 .text {
+    margin-top: 12px;
 }
 .info {
+    width: 510px;
 }
