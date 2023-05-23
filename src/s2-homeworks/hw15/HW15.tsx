@@ -5,6 +5,7 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
+import {v1} from "uuid";
 
 /*
 * 1 - дописать SuperPagination
@@ -51,8 +52,11 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
-                // делает студент
-
+                if (res !== undefined) {
+                    setTechs(res.data.techs)
+                    setLoading(false)
+                    console.log(res.data.techs)
+                }
                 // сохранить пришедшие данные
 
                 //
@@ -61,25 +65,28 @@ const HW15 = () => {
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
         // setPage(
+        setPage(newPage)
         // setCount(
-
+        setCount(newCount)
         // sendQuery(
+        sendQuery({page: newPage, count: newCount})
         // setSearchParams(
-
+        setSearchParams(`${newPage}`)
         //
     }
 
     const onChangeSort = (newSort: string) => {
+        const techsCopy = techs.sort((a, b) => b.id - a.id)
         // делает студент
-
+        setTechs(techsCopy)
         // setSort(
+        setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({page, count})
         //
     }
 
@@ -102,9 +109,12 @@ const HW15 = () => {
         </div>
     ))
 
+    const techId = v1()
+    const developerId = v1()
+
     return (
         <div id={'hw15'}>
-            <div className={s2.hwTitle}>Homework #15</div>
+            <div className={s2.hwTitle}>Hometask №15</div>
 
             <div className={s2.hw}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
@@ -118,13 +128,13 @@ const HW15 = () => {
 
                 <div className={s.rowHeader}>
                     <div className={s.techHeader}>
-                        tech
-                        <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
+                        <label htmlFor={`${techId}`+ '-sort-' + 'tech'}>Tech</label>
+                        <SuperSort sort={sort} value={'tech'} onChange={onChangeSort} id={`${techId}`}/>
                     </div>
 
                     <div className={s.developerHeader}>
-                        developer
-                        <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
+                        <label htmlFor={`${developerId}`+ '-sort-' + 'developer'}>Developer</label>
+                        <SuperSort sort={sort} value={'developer'} onChange={onChangeSort} id={`${developerId}`}/>
                     </div>
                 </div>
 
