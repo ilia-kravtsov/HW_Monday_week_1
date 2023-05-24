@@ -54,6 +54,7 @@ const HW15 = () => {
             .then((res) => {
                 if (res !== undefined) {
                     setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
                     setLoading(false)
                     console.log(res.data.techs)
                 }
@@ -97,17 +98,31 @@ const HW15 = () => {
         setCount(+params.count || 4)
     }, [])
 
-    const mappedTechs = techs.map(t => (
-        <div key={t.id} className={s.row}>
-            <div id={'hw15-tech-' + t.id} className={s.tech}>
-                {t.tech}
-            </div>
+    const rowsSortingFunc = () => {
+        switch (sort) {
+            case '0tech' || '0developer' || '1tech' || '1developer':
+                return techs.sort((a, b) => b.id - a.id)
+            case '1tech' || '1developer':
+                return techs.sort((a, b) => b.id - a.id)
+            case '':
+                return techs
+        }
+    }
+    const rowsSort = rowsSortingFunc()
 
-            <div id={'hw15-developer-' + t.id} className={s.developer}>
-                {t.developer}
+    const mappedTechs = rowsSort?.map(t => {
+        return (
+            <div key={t.id} className={s.row}>
+                <div id={'hw15-tech-' + t.id} className={s.tech}>
+                    {t.tech}
+                </div>
+
+                <div id={'hw15-developer-' + t.id} className={s.developer}>
+                    {t.developer}
+                </div>
             </div>
-        </div>
-    ))
+        )
+    })
 
     const techId = v1()
     const developerId = v1()
