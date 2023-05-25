@@ -9,7 +9,6 @@
 .techHeader {
     width: 50vw;
     font-weight: bold;
-    border: 1px solid red;
     display: flex;
     align-items: center;
 }
@@ -45,7 +44,6 @@
 }
 
 .iconBord {
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
+    width: 20px;
+    height: 20px;
 }

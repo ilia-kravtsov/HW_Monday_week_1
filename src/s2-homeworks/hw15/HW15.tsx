@@ -100,9 +100,13 @@ const HW15 = () => {
 
     const rowsSortingFunc = () => {
         switch (sort) {
-            case '0tech' || '0developer' || '1tech' || '1developer':
+            case '0tech' || '0developer':
+                return techs.sort((a, b) => a.id - b.id)
+            case '1tech':
                 return techs.sort((a, b) => b.id - a.id)
-            case '1tech' || '1developer':
+            case '0developer':
+                return techs.sort((a, b) => a.id - b.id)
+            case '1developer':
                 return techs.sort((a, b) => b.id - a.id)
             case '':
                 return techs
