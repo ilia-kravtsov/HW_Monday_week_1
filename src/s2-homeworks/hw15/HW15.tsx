@@ -240,23 +240,23 @@ const HW15 = () => {
         setCount(+params.count || 4)
     }, [])
 
-    const rowsSortingFunc = () => {
-        switch (sort) {
-            case '0tech' || '0developer':
-                return techs.sort((a, b) => a.id - b.id)
-            case '1tech':
-                return techs.sort((a, b) => b.id - a.id)
-            case '0developer':
-                return techs.sort((a, b) => a.id - b.id)
-            case '1developer':
-                return techs.sort((a, b) => b.id - a.id)
-            case '':
-                return techs
-        }
-    }
-    const rowsSort = rowsSortingFunc()
+    // const rowsSortingFunc = () => {
+    //     switch (sort) {
+    //         case '0tech' || '0developer':
+    //             return techs.sort((a, b) => a.id - b.id)
+    //         case '1tech':
+    //             return techs.sort((a, b) => b.id - a.id)
+    //         case '0developer':
+    //             return techs.sort((a, b) => a.id - b.id)
+    //         case '1developer':
+    //             return techs.sort((a, b) => b.id - a.id)
+    //         case '':
+    //             return techs
+    //     }
+    // }
+    // const rowsSort = rowsSortingFunc()
 
-    const mappedTechs = rowsSort?.map(t => {
+    const mappedTechs = techs.map(t => {
         return (
             <div key={t.id} className={s.row}>
                 <div id={'hw15-tech-' + t.id} className={s.tech}>
